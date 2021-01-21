@@ -7,18 +7,88 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="shortcut icon" href="public/favicon.ico" />
-    <title>Hello, world!</title>
+    <title>Foody Restaurant</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><strong>Navigation</strong></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#takeout">Takeout</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Food Photos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#starters">Starters</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#main">Main Dishes</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="#dessert">Dessert</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+            </ul>
+            <form>
+              <label for="email"
+                >Want to know all about Foodie? Get the
+                <span class="text-primary"
+                  ><strong>Newsletter!</strong></span
+                ></label
+              >
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email here"
+              />
+            </form>
+            <button type="button">Submit</button>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main class="text-center">
       <img
-        class="img-thumbnail rounded-circle bg-info"
+        class="img-thumbnail rounded-circle bg-light"
         src="public/terasse.jpg"
         alt="photo of the restaurant terrace"
       />
       <h1>
-        Taste the volle
-        <span class="text-primary"><strong>Gönnung</strong></span> with Foodie
+        Taste the
+        <span class="text-primary"><strong>volle Gönnung</strong></span> with
+        Foodie
       </h1>
       <p class="mt-3">
         Greetings Foodies! It smells like organic veggies in here.
@@ -73,11 +143,10 @@
                   src="public/soup.jpg"
                   class="card-img-top"
                   alt="orange soup"
+                  id="starters"
                 />
                 <div class="card-body">
-                  <p class="card-text">
-                    Begin with our starters and go on a tasty journey
-                  </p>
+                  <p class="card-text">Begin your tasty journey</p>
                 </div>
               </div>
             </div>
@@ -87,6 +156,7 @@
                   src="public/shak.jpeg"
                   class="card-img-top"
                   alt="a photo of Shakshuka"
+                  id="main"
                 />
                 <div class="card-body">
                   <p class="card-text">Taste our beautiful pan dishes</p>
@@ -113,7 +183,7 @@
                   alt="red curry"
                 />
                 <div class="card-body">
-                  <p class="card-text">Let your soul be warmed by hot curry</p>
+                  <p class="card-text">Warmed your soul with hot curry</p>
                 </div>
               </div>
             </div>
@@ -123,6 +193,7 @@
                   src="public/dessert.jpg"
                   class="card-img-top"
                   alt="oreo dessert"
+                  id="dessert"
                 />
                 <div class="card-body">
                   <p class="card-text">We even offer dessert</p>
@@ -156,11 +227,13 @@
           >
         </div>
         <div class="card-body">
-          <h5 class="card-title">We offer takeout</h5>
+          <h5 class="card-title" id="takeout">We offer takeout</h5>
           <p class="card-text">
             Please order online and come and get your food!
           </p>
-          <button type="button" class="btn btn-dark">View our menu here</button>
+          <button type="button" class="btn btn-dark" id="menu">
+            View our menu here
+          </button>
         </div>
         <div class="card-footer text-muted">Please leave a google review</div>
       </div>
